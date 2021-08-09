@@ -1,5 +1,11 @@
 function reverseString(str) {
   // type your code here
+  let reversed = ''
+
+  for(let char of str){
+    reversed = char + reversed
+  }
+return reversed
 }
 
 if (require.main === module) {
