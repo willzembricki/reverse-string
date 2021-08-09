@@ -8,6 +8,19 @@ function reverseString(str) {
 return reversed
 }
 
+function fibonachi(num){
+  let n1 = 0;
+  let n2 = 1;
+  for (let i= 0; i < num;i++){
+    let n3 = n2
+    n2 = n1 + n2 
+    n1 = n3
+  }
+  return n1
+}
+console.log(fibonachi(11))
+
+
 if (require.main === module) {
   // add your own tests in here
   console.log("Expecting: 'ih'");
